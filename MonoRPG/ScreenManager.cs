@@ -12,6 +12,11 @@ namespace MonoRPG
     public class ScreenManager
     {
         GameScreen currentScreen;
+
+        XmlManager<GameScreen> xmlGameScreenManager;
+
+        public GraphicsDevice GraphicsDevice;
+        public SpriteBatch SpriteBatch;
         
         public Vector2 Dimensions
         {
@@ -41,6 +46,9 @@ namespace MonoRPG
         {
             Dimensions = new Vector2(640, 480);
             currentScreen = new SplashScreen();
+            xmlGameScreenManager = new XmlManager<GameScreen>();
+            xmlGameScreenManager.Type = currentScreen.Type;
+            currentScreen = xmlGameScreenManager.Load("Load/SplashScreen.xml");
         }
 
         public void LoadContent(ContentManager Content)

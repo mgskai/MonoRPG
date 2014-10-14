@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Serialization;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
@@ -12,6 +13,12 @@ namespace MonoRPG
     public class GameScreen
     {
         protected ContentManager content;
+        [XmlIgnore]
+        public Type Type;
+        public GameScreen()
+        {
+            Type = this.GetType();
+        }
         public virtual void LoadContent()
         {
             content = new ContentManager(

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoRPG", "MonoRPG\MonoRPG.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoRPGContent", "MonoRPGContent\MonoRPGContent\MonoRPGContent.csproj", "{2254661D-0011-4625-966A-B1FBF65478D4}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "MonoRPGContentContent", "MonoRPGContent\MonoRPGContentContent\MonoRPGContentContent.contentproj", "{FDECF897-87D1-4F87-BC5E-9C4C8026F094}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoRPGContentContent", "MonoRPGContent\MonoRPGContentContent\MonoRPGContentContent.contentproj", "{FDECF897-87D1-4F87-BC5E-9C4C8026F094}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
